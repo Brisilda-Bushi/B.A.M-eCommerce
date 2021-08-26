@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/B.A.M-eCommerce/static/css/main.48fd401d.chunk.css",
+    "main.js": "/B.A.M-eCommerce/static/js/main.7e06cd25.chunk.js",
+    "main.js.map": "/B.A.M-eCommerce/static/js/main.7e06cd25.chunk.js.map",
+    "runtime-main.js": "/B.A.M-eCommerce/static/js/runtime-main.1c60b35f.js",
+    "runtime-main.js.map": "/B.A.M-eCommerce/static/js/runtime-main.1c60b35f.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/B.A.M-eCommerce/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.951aec03.chunk.js": "/B.A.M-eCommerce/static/js/2.951aec03.chunk.js",
+    "static/js/2.951aec03.chunk.js.map": "/B.A.M-eCommerce/static/js/2.951aec03.chunk.js.map",
+    "index.html": "/B.A.M-eCommerce/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/B.A.M-eCommerce/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.48fd401d.chunk.css.map": "/B.A.M-eCommerce/static/css/main.48fd401d.chunk.css.map",
+    "static/js/2.951aec03.chunk.js.LICENSE.txt": "/B.A.M-eCommerce/static/js/2.951aec03.chunk.js.LICENSE.txt",
+    "static/media/fashionstore.0b392768.jpg": "/B.A.M-eCommerce/static/media/fashionstore.0b392768.jpg",
+    "static/media/hero.288e83ea.jpg": "/B.A.M-eCommerce/static/media/hero.288e83ea.jpg",
+    "static/media/hero1.55b1bc98.jpg": "/B.A.M-eCommerce/static/media/hero1.55b1bc98.jpg",
+    "static/media/hero2.569eda52.jpg": "/B.A.M-eCommerce/static/media/hero2.569eda52.jpg",
+    "static/media/hero3.18818907.jpg": "/B.A.M-eCommerce/static/media/hero3.18818907.jpg",
+    "static/media/logo.146dd4c9.svg": "/B.A.M-eCommerce/static/media/logo.146dd4c9.svg",
+    "static/media/men1.d4ea333e.png": "/B.A.M-eCommerce/static/media/men1.d4ea333e.png",
+    "static/media/men2.8743dd62.jpg": "/B.A.M-eCommerce/static/media/men2.8743dd62.jpg",
+    "static/media/men3.2cf427c4.png": "/B.A.M-eCommerce/static/media/men3.2cf427c4.png",
+    "static/media/men4.3684ed84.jpg": "/B.A.M-eCommerce/static/media/men4.3684ed84.jpg",
+    "static/media/women1.5b53f228.png": "/B.A.M-eCommerce/static/media/women1.5b53f228.png",
+    "static/media/women2.d94c7bd5.jpg": "/B.A.M-eCommerce/static/media/women2.d94c7bd5.jpg",
+    "static/media/women3.f9508b51.jpg": "/B.A.M-eCommerce/static/media/women3.f9508b51.jpg",
+    "static/media/women4.2515fbf3.jpg": "/B.A.M-eCommerce/static/media/women4.2515fbf3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c60b35f.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.951aec03.chunk.js",
+    "static/css/main.48fd401d.chunk.css",
+    "static/js/main.7e06cd25.chunk.js"
+  ]
+}
