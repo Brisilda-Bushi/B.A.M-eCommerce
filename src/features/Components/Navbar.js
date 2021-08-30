@@ -76,6 +76,19 @@ function NavbarFunc() {
             >
               CONTACT
             </NavLink>
+            <NavLink
+              className="headerLink"
+              activeClassName="is-active"
+              activeStyle={{
+                color: "#9F78FF",
+                fontWeight: "bold",
+                textDecoration: "underline",
+              }}
+              exact={true}
+              to="/login"
+            >
+              LOGIN
+            </NavLink>
           </Nav>
           <Nav className="Social-links m-2">
             <Row>

@@ -14,6 +14,7 @@ import Shop from "./features/Pages/Shop";
 import Contact from "./features/Pages/Contact";
 import Cart from "./features/Pages/Cart";
 import PageNotFound from "./features/Pages/PageNotFound";
+import RegistrationPage from "./features/Pages/RegistrationPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <NavbarFunc />
         <Switch>
           <Route path="/" exact component={HomePage} />
+          <Route path="/login" exact component={RegistrationPage} />
           <Route path="/about" exact component={About} />
           <Route path="/shop" exact component={Shop} />
           <Route path="/contact" exact component={Contact} />

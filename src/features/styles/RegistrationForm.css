@@ -54,7 +54,7 @@ form.sign-in-form {
   text-transform: uppercase;
 }
 
-.input-field{
+.input-field {
   max-width: 380px;
   width: 100%;
   background-color: #f0f0f0;
@@ -73,7 +73,7 @@ form.sign-in-form {
   transition: 0.5s;
   font-size: 1.1rem;
 }
-.input-field input, .input-message {
+.input-field input {
   background: none;
   outline: none;
   border: none;
@@ -87,25 +87,11 @@ form.sign-in-form {
   color: var(--color-accent-tint-orange-1);
 }
 
-.input-field input::placeholder, .input-message::placeholder {
+.input-field input::placeholder {
   color: #aaa;
   font-weight: 500;
   outline: none;
   cursor: pointer;
-}
-.input-message{
-  text-align: left;
-  max-width: 380px;
-  width: 100%;
-  background-color: #f0f0f0;
-  margin: 10px 0;
-  padding: 30px;
-  height: 250px;
-  border-radius: 40px;
-  display: grid;
-  grid-template-columns: 15% 85%;
-
-  position: relative;
 }
 
 .social-text {
