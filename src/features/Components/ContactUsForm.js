@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../img/logo.svg";
 import { FaUserAlt, FaAt } from "react-icons/fa";
 
 function FormPage() {
@@ -33,16 +32,6 @@ function FormPage() {
     }
   };
 
-  const handleOnSignUpClick = () => {
-    const container = document.querySelector(".container-login");
-    container.classList.add("sign-up-mode");
-  };
-
-  const handleOnSignInClick = () => {
-    const container = document.querySelector(".container-login");
-    container.classList.remove("sign-up-mode");
-  };
-
   return (
     <div>
       <div className="Title-Container">
@@ -60,7 +49,12 @@ function FormPage() {
                 </div>
                 <div className="input-field">
                   <FaAt className="regis-icon" size={24} />
-                  <input type="email" placeholder="Email" required />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    required
+                    onChange={emailOnChange}
+                  />
                 </div>
                 <textarea
                   className="input-message"
@@ -75,15 +69,14 @@ function FormPage() {
                   type="submit"
                   defaultValue="Login"
                   className="submit-btn"
+                  onSubmit={onSubmit}
                 />
               </form>
             </div>
           </div>
           <div className="panels-container">
             <div className="panel left-panel">
-              <div className="content">
-        
-              </div>
+              <div className="content"></div>
             </div>
           </div>
         </div>

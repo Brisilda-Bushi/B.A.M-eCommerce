@@ -1,20 +1,27 @@
 import React, { useState } from "react";
-import logo from "../img/logo.svg";
-import { FaUserAlt, FaUnlockAlt, FaLock,FaAt } from "react-icons/fa";
+import { FaUserAlt, FaUnlockAlt, FaLock, FaAt } from "react-icons/fa";
 
 function RegistrationForm() {
   const [email, updateEmail] = useState("");
+  const [mode, updateMode] = useState("");
   const emailOnChange = (e) => {
     updateEmail(e.target.value);
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
+
+    // validation (actually not really necessary)
     if (email) {
       if (email.includes("@") && email.length > 3 && domainValid(email)) {
         alert(
           "Thank you for your message, we will get back to you as soon as possible!"
         );
+        // TODO call backend rest api
+        // check which mode
+        // login
+        // register
+
       } else {
         alert("Data invalid, please check your data");
       }
@@ -22,6 +29,7 @@ function RegistrationForm() {
       alert("Full Name, email and message needs to be filled out!");
     }
     e.target.reset();
+
   };
 
   const domainValid = (email) => {
@@ -34,13 +42,11 @@ function RegistrationForm() {
   };
 
   const handleOnSignUpClick = () => {
-    const container = document.querySelector(".container-login");
-    container.classList.add("sign-up-mode");
+    updateMode("sign-up-mode");
   };
 
   const handleOnSignInClick = () => {
-    const container = document.querySelector(".container-login");
-    container.classList.remove("sign-up-mode");
+    updateMode("");
   };
 
   return (
@@ -49,45 +55,55 @@ function RegistrationForm() {
         <h1 className="Title-Contact">Registration</h1>
       </div>
       <div className="login-form-container">
-        <div className="container-login">
+        <div className={`container-login ${mode}`}>
           <div className="forms-container">
             <div className="signin-signup">
               <form action="#" className="sign-in-form">
                 <h2 className="title-reg">Sign in</h2>
                 <div className="input-field">
-                  <FaUserAlt className="regis-icon" size={24}/>
-                  <input type="text" placeholder="Username" required/>
+                  <FaUserAlt className="regis-icon" size={24} />
+                  <input type="text" placeholder="Username" required />
                 </div>
                 <div className="input-field">
-                  <FaLock className="regis-icon" size={24}/>
+                  <FaLock className="regis-icon" size={24} />
 
-                  <input type="password" placeholder="Password" required/>
+                  <input type="password" placeholder="Password" required />
                 </div>
                 <input
                   type="submit"
                   defaultValue="Login"
                   className="submit-btn"
+                  onSubmit={onSubmit}
                 />
               </form>
               <form action="#" className="sign-up-form">
                 <h2 className="title-reg">Sign up</h2>
                 <div className="input-field">
-                <FaUserAlt className="regis-icon" size={24}/>
-                  <input type="text" placeholder="Username" required/>
+                  <FaUserAlt className="regis-icon" size={24} />
+                  <input type="text" placeholder="Username" required />
                 </div>
                 <div className="input-field">
-                <FaAt className="regis-icon" size={24}/>
-                  <input type="email" placeholder="Email" required/>
+                  <FaAt className="regis-icon" size={24} />
+                  <input type="email" placeholder="Email" required />
                 </div>
                 <div className="input-field">
-                <FaLock className="regis-icon" size={24}/>
-                  <input type="password" placeholder="Password" required/>
+                  <FaLock className="regis-icon" size={24} />
+                  <input type="password" placeholder="Password" required />
                 </div>
                 <div className="input-field">
-                <FaUnlockAlt className="regis-icon" size={24}/>
-                  <input type="password" placeholder="Confirm the Password" required/>
+                  <FaUnlockAlt className="regis-icon" size={24} />
+                  <input
+                    type="password"
+                    placeholder="Confirm the Password"
+                    required
+                  />
                 </div>
-                <input type="submit" className="submit-btn" defaultValue="Sign up" />
+                <input
+                  type="submit"
+                  className="submit-btn"
+                  defaultValue="Sign up"
+                  onSubmit={onSubmit}
+                />
               </form>
             </div>
           </div>
@@ -104,8 +120,7 @@ function RegistrationForm() {
                   Sign up
                 </button>
               </div>
-              <div>
-              </div>
+              <div></div>
             </div>
             <div className="panel right-panel">
               <div className="content">
